@@ -1,0 +1,17 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="lxml.etree.tostring" />
+          <option value="lxml.etree.Element" />
+          <option value="lxml.etree.SubElement" />
+          <option value="lxml.etree.fromstring" />
+          <option value="lxml.etree.XML" />
+          <option value="lxml.etree.XSLT" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
