@@ -37,6 +37,20 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-postgresql"
+version = "0.0.3"
+description = "Postgres-specific django goodness."
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-postgresql-0.0.3.tar.gz", hash = "sha256:981b3b98b91673d9e6aca1be4b68f42779c6947e8db52d1ea69876cd96972f2e"},
+]
+
+[package.dependencies]
+Django = "*"
+
+[[package]]
 name = "djangorestframework"
 version = "3.14.0"
 description = "Web APIs for Django, made easy."
@@ -119,4 +133,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "68f0ab93a304ab74ca50679a471f660e194a6da3f39095e33b352c96a9437438"
+content-hash = "922e2c898d92225907b0c5c50f2c61d203c30229bf0ae56f4a815668cc306a82"

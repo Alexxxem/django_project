@@ -10,6 +10,7 @@ python = "^3.11"
 django = "^4.2"
 djangorestframework = "^3.14.0"
 psycopg2 = "^2.9.6"
+django-postgresql = "^0.0.3"
 
 
 [build-system]
