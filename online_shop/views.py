@@ -1,7 +1,6 @@
-from django.shortcuts import render
 from rest_framework import generics
 from django.views.generic.base import TemplateView
-from .models import Product, Category, Manufacturer
+from online_shop.models import Product, Category, Manufacturer
 from .serializers import ProductSerializer, CategorySerializer, ManufacturerSerializer
 
 
