@@ -42,12 +42,6 @@ class ProductList(generics.ListAPIView):
         if manufacturer:
             queryset = queryset.filter(manufacturer__name=manufacturer)
 
-        if sort_by:
-            sort_field = sort_by.lower()
-            if sort_order == 'desc':
-                sort_field = '-' + sort_field
-            queryset = queryset.order_by(sort_field)
-
         return queryset
 
     def list(self, request, *args, **kwargs):

@@ -38,3 +38,21 @@ tr:hover {
 #filter-section select {
   margin-right: 10px;
 }
+
+th i {
+  margin-left: 5px;
+}
+
+th i.fa-sort {
+  color: #ccc;
+}
+
+th.sorted-asc i.fa-sort-up,
+th.sorted-desc i.fa-sort-down {
+  color: #007bff;
+}
+
+th.sorted-asc i.fa-sort-up:hover,
+th.sorted-desc i.fa-sort-down:hover {
+  color: #0056b3;
+}
