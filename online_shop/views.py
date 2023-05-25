@@ -44,11 +44,6 @@ class ProductList(generics.ListAPIView):
 
         return queryset
 
-    def list(self, request, *args, **kwargs):
-        queryset = self.get_queryset()
-        serializer = self.get_serializer(queryset, many=True)
-        return JsonResponse(serializer.data, safe=False)
-
 
 class ProductRetrieveUpdateDelete(generics.RetrieveUpdateDestroyAPIView):
     queryset = Product.objects.all()
