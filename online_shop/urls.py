@@ -20,11 +20,11 @@ from .views import IndexView, ProductList, ProductRetrieveUpdateDelete, Category
 
 
 urlpatterns = [
-    path('', IndexView.as_view()),
+    path('', IndexView.as_view(), name='index'),
     path('admin/', admin.site.urls),
-    path('api/products/', ProductList.as_view(), name='Create-Product-List'),
+    path('api/products/', ProductList.as_view(), name='product-list'),
     path('api/product/<int:pk>/', ProductRetrieveUpdateDelete.as_view(), name='product-details'),
-    path('api/categories/', CategoryList.as_view(), name='Create-Category-List'),
-    path('api/manufacturers/', ManufacturerList.as_view(), name='Create-Manufacturer-List'),
+    path('api/categories/', CategoryList.as_view(), name='category-list'),
+    path('api/manufacturers/', ManufacturerList.as_view(), name='manufacturer-list'),
 
 ]

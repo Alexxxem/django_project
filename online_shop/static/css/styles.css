@@ -30,3 +30,11 @@ th {
 tr:hover {
     background-color: #e9e9e9;
 }
+
+#filter-section {
+  margin-bottom: 20px;
+}
+
+#filter-section select {
+  margin-right: 10px;
+}
