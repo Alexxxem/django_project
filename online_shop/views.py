@@ -30,6 +30,8 @@ class ProductList(generics.ListAPIView):
         price_max = self.request.GET.get('price_max')
         category = self.request.GET.get('category')
         manufacturer = self.request.GET.get('manufacturer')
+        sort_by = self.request.GET.get('sort_by')
+        sort_order = self.request.GET.get('sort_order')
 
         if price_min:
             queryset = queryset.filter(price__gte=price_min)
@@ -39,6 +41,12 @@ class ProductList(generics.ListAPIView):
             queryset = queryset.filter(category__name=category)
         if manufacturer:
             queryset = queryset.filter(manufacturer__name=manufacturer)
+
+        if sort_by:
+            sort_field = sort_by.lower()
+            if sort_order == 'desc':
+                sort_field = '-' + sort_field
+            queryset = queryset.order_by(sort_field)
 
         return queryset
 
